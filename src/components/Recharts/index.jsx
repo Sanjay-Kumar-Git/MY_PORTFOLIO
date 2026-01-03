@@ -7,10 +7,6 @@ import {
   ResponsiveContainer, Cell
 } from "recharts"
 
-/* ======================================================
-   1️⃣ ENHANCED SKILLS DATA
-   Added 'level' and 'description' for extra detail
-====================================================== */
 const skillsData = [
   { skill: "JavaScript", value: 9, level: "Expert", desc: "ES6+, Async, DOM" },
   { skill: "React", value: 9, level: "Advanced", desc: "Hooks, Context, Redux" },
@@ -28,9 +24,6 @@ const tabs = [
   { key: "circles", label: "Skill Circles", info: "Individual focus" },
 ]
 
-/* ======================================================
-   2️⃣ CUSTOM TOOLTIP (Stylish & Informative)
-====================================================== */
 const CustomTooltip = ({ active, payload, dark }) => {
   if (active && payload && payload.length) {
     const data = payload[0].payload;
@@ -45,9 +38,7 @@ const CustomTooltip = ({ active, payload, dark }) => {
   return null;
 };
 
-/* ======================================================
-   3️⃣ MAIN SKILLS PAGE
-====================================================== */
+
 const SkillsPage = ({ dark = true }) => {
   const [activeTab, setActiveTab] = useState("bars")
   const [isMobile, setIsMobile] = useState(false)
@@ -93,9 +84,6 @@ const SkillsPage = ({ dark = true }) => {
   )
 }
 
-/* ======================================================
-   4️⃣ GRAPH COMPONENTS
-====================================================== */
 
 const SkillBars = ({ dark, isMobile }) => (
   <ResponsiveContainer width="100%" height={400}>
@@ -157,9 +145,7 @@ const SkillCircles = ({ dark }) => (
   </div>
 )
 
-/* ======================================================
-   5️⃣ STYLES (Refined for Responsiveness)
-====================================================== */
+
 const styles = {
   section: dark => ({
     padding: "80px 5vw",

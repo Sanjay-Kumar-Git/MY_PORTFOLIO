@@ -20,7 +20,6 @@ import {FooterSection,FooterContainer,FooterLeft,FooterRight,FooterIcon} from '.
 const ContactSection = () => {
   const { dark } = useContext(Context);
 
-  /* ================= EMAIL FIX (ONLY ADDITION) ================= */
   const formRef = useRef(null);
   const [status, setStatus] = useState("");
 
@@ -45,10 +44,9 @@ const ContactSection = () => {
         }
       );
   };
-  /* ============================================================= */
+
 
   return (
-    /* We wrap everything in a div that handles the background transition */
     <div style={styles.wrapper(dark)}>
       <Navbar dark={dark} />
 
@@ -70,14 +68,12 @@ const ContactSection = () => {
         </motion.div>
 
         <div style={styles.container}>
-          {/* ---------- LEFT INFO ---------- */}
           <motion.div
             initial={{ opacity: 0, x: -30 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             style={styles.infoBox(dark)}
           >
-            {/* --- NEW IMAGE ELEMENT --- */}
             <div style={styles.imageContainer}>
               <img
                 src="https://res.cloudinary.com/dvf7rhe2l/image/upload/v1767432705/Gemini_Generated_Image_denol6denol6deno_dpdzyo.png"
@@ -122,7 +118,6 @@ const ContactSection = () => {
             </div>
           </motion.div>
 
-          {/* ---------- RIGHT FORM ---------- */}
           <motion.form
             ref={formRef}
             initial={{ opacity: 0, x: 30 }}
@@ -224,7 +219,6 @@ const ContactSection = () => {
   );
 };
 
-/* ===================== STYLES (UNCHANGED) ===================== */
 const styles = {
   wrapper: (dark) => ({
     backgroundColor: dark ? "#0a0a0a" : "#ffffff",

@@ -10,7 +10,8 @@ const journeyItems = [
     title: "2019",
     cardTitle: "SECONDARY SCHOOL EDUCATION",
     cardSubtitle: "ZPHS PEDDAKODEPAKA",
-    cardDetailedText: "Completed secondary education with a CGPA of 8.7, building strong academic fundamentals and problem-solving skills.",
+    cardDetailedText:
+      "Completed secondary education with a CGPA of 8.7, building strong academic fundamentals and problem-solving skills.",
     media: {
       type: "IMAGE",
       source: {
@@ -22,7 +23,8 @@ const journeyItems = [
     title: "2021",
     cardTitle: "INTERMEDIATE • MPC",
     cardSubtitle: "SHIVANI JUNIOR COLLEGE",
-    cardDetailedText: "Passed Intermediate with 89.8% (898/1000), reflecting consistent academic excellence and subject proficiency.",
+    cardDetailedText:
+      "Passed Intermediate with 89.8% (898/1000), reflecting consistent academic excellence and subject proficiency.",
     media: {
       type: "IMAGE",
       source: {
@@ -34,7 +36,8 @@ const journeyItems = [
     title: "2025",
     cardTitle: "B-TECH • COMPUTER SCIENCE AND ENGINEERING",
     cardSubtitle: "VAAGDEVI COLLEGE OF ENGINEERING",
-    cardDetailedText: "Completed B.Tech with a CGPA of 7.43, gaining strong foundations in computer science, programming, and practical problem-solving through coursework and projects.",
+    cardDetailedText:
+      "Completed B.Tech with a CGPA of 7.43, gaining strong foundations in computer science, programming, and practical problem-solving through coursework and projects.",
     media: {
       type: "IMAGE",
       source: {
@@ -46,7 +49,8 @@ const journeyItems = [
     title: "2025",
     cardTitle: "MERN FULL STACK",
     cardSubtitle: "NxtWave | CCBP 4.0",
-    cardDetailedText: "Completed comprehensive full stack development training at NxtWave with a perfect CGPA of 10. The program emphasized real-world projects, coding challenges, and modern web technologies, strengthening my frontend, backend, and problem-solving capabilities.",
+    cardDetailedText:
+      "Completed comprehensive full stack development training at NxtWave with a perfect CGPA of 10. The program emphasized real-world projects, coding challenges, and modern web technologies, strengthening my frontend, backend, and problem-solving capabilities.",
     media: {
       type: "IMAGE",
       source: {
@@ -69,7 +73,7 @@ const Journey = () => {
 
       <div className="chrono-container">
         <Chrono
-        $dark={dark}
+          $dark={dark}
           items={journeyItems}
           mode="VERTICAL_ALTERNATING"
           hideControls
@@ -77,12 +81,12 @@ const Journey = () => {
           cardWidth={300}
           mediaSettings={{ align: "center", fit: "cover" }}
           theme={{
-            primary: dark?"#9cff57":"#09f26aff",
-            secondary: dark?"#9cff57":"#09f26aff",
+            primary: dark ? "#9cff57" : "#09f26aff",
+            secondary: dark ? "#9cff57" : "#09f26aff",
             cardBgColor: dark ? "#101010ff" : "#ffffff",
-            cardForeColor:  "#101010ff",
-            titleColor: dark?"#9cff57":"#09f26aff",
-            titleColorActive: dark?"#101010ff":"#f2f7f4ff",
+            cardForeColor: "#101010ff",
+            titleColor: dark ? "#9cff57" : "#09f26aff",
+            titleColorActive: dark ? "#101010ff" : "#f2f7f4ff",
           }}
         />
       </div>

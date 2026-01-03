@@ -212,8 +212,6 @@ const AnalogClock = ({ dark }) => {
           </span>
         ))}
       </SpinningText>
-
-      {/* Hour and Minute hands now correctly reactive */}
       <ClockHand
         $type="hour"
         $degrees={hours}

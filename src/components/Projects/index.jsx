@@ -22,9 +22,6 @@ import {
   ViewAllButton,
 } from "../../StyledComponents";
 
-/* ======================================================
-   PROJECT DATA
-====================================================== */
 
 const projects = [
   {
@@ -82,9 +79,6 @@ const projects = [
 
 const categories = ["All", "Frontend", "Full Stack", "ML"];
 
-/* ======================================================
-   MAIN COMPONENT
-====================================================== */
 
 const ProjectsSection = () => {
   const { dark } = useContext(Context);
@@ -117,7 +111,7 @@ const ProjectsSection = () => {
         <PiStarFour /> My Work
       </h2>
 
-      {/* ---------- CATEGORY TABS ---------- */}
+
       <div style={styles.tabs}>
         {categories.map((cat) => (
           <button
@@ -142,7 +136,6 @@ const ProjectsSection = () => {
         ))}
       </div>
 
-      {/* ---------- PROJECT GRID ---------- */}
       <motion.div layout style={styles.grid}>
         <AnimatePresence>
           {filteredProjects.map((project) => (
@@ -169,7 +162,6 @@ const ProjectsSection = () => {
         </AnimatePresence>
       </motion.div>
 
-      {/* ---------- PROJECT VIEWER ---------- */}
       <AnimatePresence mode="wait">
         {activeProject && (
           <ProjectViewer
@@ -245,10 +237,6 @@ const ProjectsSection = () => {
 
 export default ProjectsSection;
 
-/* ======================================================
-   PROJECT CARD
-====================================================== */
-
 const ProjectCard = ({ project, active, dark }) => (
   <div
     style={{
@@ -266,9 +254,6 @@ const ProjectCard = ({ project, active, dark }) => (
   </div>
 );
 
-/* ======================================================
-   PROJECT VIEWER
-====================================================== */
 
 const ProjectViewer = ({ project, isMobile, dark }) => (
   <motion.div
@@ -279,7 +264,7 @@ const ProjectViewer = ({ project, isMobile, dark }) => (
     style={styles.viewer}
   >
     {" "}
-    {/* ---------- LIVE PROJECT ---------- */}{" "}
+    {" "}
     {!isMobile ? (
       <div style={styles.iframeWrapper(dark)}>
         {" "}
@@ -301,7 +286,7 @@ const ProjectViewer = ({ project, isMobile, dark }) => (
         Open Live Project{" "}
       </a>
     )}{" "}
-    {/* ---------- PROJECT INFO ---------- */}{" "}
+    {" "}
     <div style={styles.info(dark)}>
       {" "}
       <h2>{project.title}</h2> <p>{project.description}</p>{" "}
@@ -339,9 +324,6 @@ const ProjectViewer = ({ project, isMobile, dark }) => (
   </motion.div>
 );
 
-/* ======================================================
-   STYLES (THEME AWARE)
-====================================================== */
 
 const styles = {
   section: (dark) => ({
@@ -370,13 +352,12 @@ const styles = {
 
   tab: (active, dark) => ({
     padding: "10px 18px",
-    borderRadius: "20px", // capsule shape
+    borderRadius: "20px", 
     border: "none",
     cursor: "pointer",
     position: "relative",
     overflow: "hidden",
 
-    /* 🌊 WATER LAYER (rounded illusion) */
     backgroundImage: active
       ? "linear-gradient(#2dbf64, #9cff57)"
       : dark
@@ -385,18 +366,15 @@ const styles = {
 
     backgroundRepeat: "no-repeat",
 
-    /* 🌊 WATER FILL CONTROL */
     backgroundSize: active ? "100% 100%" : "100% 0%",
 
-    /* 🌊 FILL DIRECTION */
+
     backgroundPosition: dark ? "bottom center" : "top center",
 
-    /* BASE BACKGROUND */
     backgroundColor: dark ? "rgba(255,255,255,0.08)" : "#e5e5e5",
 
     color: active ? "#000" : dark ? "#fff" : "#000",
 
-    /* 🧈 ELASTIC TRANSITION */
     transition: `
     background-size 0.55s cubic-bezier(0.22, 1.4, 0.36, 1),
     transform 0.3s cubic-bezier(0.22, 1.4, 0.36, 1)
