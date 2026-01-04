@@ -1612,3 +1612,92 @@ export const JourneySection = styled.section`
   }
 `;
 
+export const CenterPage = styled.div`
+  height: 100vh;
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 20px;
+
+  background: transparent;
+`
+
+export const CenterCard = styled.div`
+  width: 100%;
+  max-width: 420px;
+
+  padding: 32px 28px;
+  border-radius: 18px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 16px;
+
+  background: ${({ $dark }) =>
+    $dark
+      ? "#000"
+      : "#ffffff"};
+
+  color: ${({ $dark }) => ($dark ? "#ffffff" : "#121212")};
+
+  box-shadow: ${({ $dark }) =>
+    $dark
+      ? "0 20px 50px rgba(0,0,0,0.6)"
+      : "0 16px 40px rgba(0,0,0,0.12)"};
+
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+
+  &:hover {
+    transform: translateY(-4px);
+    box-shadow: ${({ $dark }) =>
+      $dark
+        ? "0 24px 60px rgba(0,0,0,0.7)"
+        : "0 20px 48px rgba(0,0,0,0.16)"};
+  }
+
+  @media (max-width: 480px) {
+    padding: 24px 20px;
+    border-radius: 14px;
+  }
+`
+
+export const CardImage = styled.img`
+  width: 300px;
+  height: auto;
+  margin-bottom: 8px;
+  border-radius: 50%;
+  margin-bottom: 0px;
+  padding-bottom:0px;
+
+  @media (max-width: 480px) {
+    width: 90px;
+  }
+`
+
+export const CardTitle = styled.h1`
+  font-size: clamp(3.4rem, 20vw, 3.5rem);
+  margin: 0px;
+  font-weight: 800;
+  font-family:"Space Mono";
+  padding: 0px;
+  color: ${({ $dark }) => ($dark ? '#9cff57' : '#09f26aff')};
+`
+
+export const CardText = styled.p`
+  font-size: 1.23rem;
+  opacity: 0.90;
+  margin: 0px;
+  padding:0px;
+  font-family:"Space Mono";
+  line-height: 2;
+  font-weight: bold;
+  color:${({ $dark }) => ($dark ? '#9cff57' : '#09f26aff')};
+`
