@@ -19,13 +19,12 @@ body,
   scroll-behavior: smooth;
   overscroll-behavior: none;
   -webkit-overflow-scrolling: touch;
-  /* Chrome, Edge, Safari */
+
 ::selection {
   background-color: #12ed37;
   color: #ffffff;
 }
 
-/* Firefox */
 ::-moz-selection {
   background-color: #12ed37;
   color: #ffffff;
