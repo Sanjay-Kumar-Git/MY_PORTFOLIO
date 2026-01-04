@@ -1686,7 +1686,8 @@ export const CardTitle = styled.h1`
   font-size: clamp(3.4rem, 20vw, 3.5rem);
   margin: 0px;
   font-weight: 800;
-  font-family:"Space Mono";
+  font-family: 'Poppins', sans-serif;
+  -webkit-font-smoothing: antialiased;
   padding: 0px;
   color: ${({ $dark }) => ($dark ? '#9cff57' : '#09f26aff')};
 `
@@ -1695,9 +1696,11 @@ export const CardText = styled.p`
   font-size: 1.23rem;
   opacity: 0.90;
   margin: 0px;
+  letter-spacing: -0.5px;
   padding:0px;
-  font-family:"Space Mono";
+  font-family: 'Poppins', sans-serif;
+  -webkit-font-smoothing: antialiased;
   line-height: 2;
-  font-weight: bold;
+  font-weight: 400;
   color:${({ $dark }) => ($dark ? '#9cff57' : '#09f26aff')};
 `
