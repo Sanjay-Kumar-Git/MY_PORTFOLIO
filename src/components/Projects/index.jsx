@@ -75,6 +75,18 @@ const projects = [
     thumbnail:
       "https://res.cloudinary.com/dvf7rhe2l/image/upload/v1767429855/Screenshot_2025-04-21_152431_wwh87b.png",
   },
+  {
+    id: 5,
+    title: "Landing Page",
+    category: "Frontend",
+    liveUrl: "https://sanjay-kumar-git.github.io/clove-dental-landing/",
+    github: "https://github.com/Sanjay-Kumar-Git/clove-dental-landing.git",
+    tech: ["HTML5", "CSS3", "JAVASCRIPT"],
+    description:
+      "This Web Page is build on  practice purpose only...",
+      thumbnail:
+      "https://res.cloudinary.com/dvf7rhe2l/image/upload/v1767496003/Screenshot_2026-01-04_083547_iexkau.png",
+  },
 ];
 
 const categories = ["All", "Frontend", "Full Stack", "ML"];
@@ -383,15 +395,18 @@ const styles = {
 
   grid: {
     display: "grid",
+    flexWrap: 'wrap',
     gridTemplateColumns: "repeat(auto-fit, minmax(220px, 1fr))",
     gap: "20px",
+    overflow:'auto',
   },
 
   card: (dark) => ({
     padding: "12px",
     borderRadius: "16px",
-    minHeight: "300px",
-    minWidth: "300px",
+    minHeight: "50%",
+    minWidth: "50%",
+    marginRight:'10px',
     textAlign: "center",
     cursor: "pointer",
     background: dark ? "rgba(255,255,255,0.05)" : "#ffffff",
