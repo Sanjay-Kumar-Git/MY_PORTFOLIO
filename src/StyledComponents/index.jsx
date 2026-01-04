@@ -1678,7 +1678,7 @@ export const CardImage = styled.img`
   padding-bottom:0px;
 
   @media (max-width: 480px) {
-    width: 90px;
+    width: 200px;
   }
 `
 
