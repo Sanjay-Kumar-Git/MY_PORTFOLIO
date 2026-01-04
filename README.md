@@ -52,7 +52,8 @@ MY_PORTFOLIO/
 ├── vite.config.js
 └── README.md
 
-```text
+```
+
 ## ▶️ Running the Project Locally
         ### 1️⃣ Clone the repository
             git clone https://github.com/Sanjay-Kumar-Git/MY_PORTFOLIO.git
