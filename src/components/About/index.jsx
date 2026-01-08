@@ -314,42 +314,43 @@ const About = () => {
         </FinalCTAContainer>
       </FinalCTASection>
       <FooterSection>
-        <FooterContainer $dark={dark}>
-          <FooterLeft>
-            © {new Date().getFullYear()} Sanjay. All rights reserved.
-          </FooterLeft>
+          <FooterContainer $dark={dark}>
+            <FooterLeft>
+              © {new Date().getFullYear()} Sanjay. All rights reserved.
+            </FooterLeft>
 
-          <FooterRight>
-            <FooterIcon
-              $dark={dark}
-              href="https://www.linkedin.com/in/sanjay-kumar-thadaka/"
-              target="_blank"
-            >
-              <FiLinkedin size={30} />
-            </FooterIcon>
-            <FooterIcon
-              $dark={dark}
-              href="https://github.com/Sanjay-Kumar-Git"
-              target="_blank"
-            >
-              <FaGithub size={30} />
-            </FooterIcon>
-            <FooterIcon
-              $dark={dark}
-              href="https://www.instagram.com/mr.sanju.xt/?hl=en"
-            >
-              <LuInstagram size={30} />
-            </FooterIcon>
-            <FooterIcon
-              $dark={dark}
-              href="mailto:sanjaythadaka614@gmail.com"
-              target="_blank"
-            >
-              <IoMailOutline size={30} />
-            </FooterIcon>
-          </FooterRight>
-        </FooterContainer>
-      </FooterSection>
+            <FooterRight>
+              <FooterIcon
+                $dark={dark}
+                href="https://www.linkedin.com/in/sanjay-kumar-thadaka/"
+                target="_blank"
+              >
+                <FiLinkedin size={30} />
+              </FooterIcon>
+              <FooterIcon
+                $dark={dark}
+                href="https://github.com/Sanjay-Kumar-Git"
+                target="_blank"
+              >
+                <FaGithub size={30} />
+              </FooterIcon>
+              <FooterIcon
+                $dark={dark}
+                href="https://www.instagram.com/mr.sanju.xt/?hl=en"
+                target="_blank"
+              >
+                <LuInstagram size={30} />
+              </FooterIcon>
+              <FooterIcon
+                $dark={dark}
+                href="mailto:sanjaythadaka614@gmail.com"
+                target="_blank"
+              >
+                <IoMailOutline size={30} />
+              </FooterIcon>
+            </FooterRight>
+          </FooterContainer>
+        </FooterSection>
       <MobileNavBar />
     </AboutPage>
   );

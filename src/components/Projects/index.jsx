@@ -63,7 +63,7 @@ const projects = [
   },
   {
     id: 4,
-    title: "Deep-Learning-Framework-for-Online-Loan-Fraud-Prevention",
+    title: "ML_Fraud-Prevention",
     category: "ML",
     liveUrl:
       "https://www.linkedin.com/in/sanjay-kumar-thadaka/details/projects/1753617631558/single-media-viewer/?profileId=ACoAAFB3gxgBbGx_cXyEHHbncbz5h-VtTHPZZ4s",
@@ -73,7 +73,7 @@ const projects = [
     description:
       "Authentication is disabled in iframe previews due to browser security. Please Open live url Link Below.",
     thumbnail:
-      "https://res.cloudinary.com/dvf7rhe2l/image/upload/v1767429855/Screenshot_2025-04-21_152431_wwh87b.png",
+      "https://res.cloudinary.com/dvf7rhe2l/image/upload/v1767853120/Screenshot_2025-04-21_152834_imxegk.png",
   },
   {
     id: 5,
@@ -86,6 +86,18 @@ const projects = [
       "This Web Page is build on  practice purpose only...",
       thumbnail:
       "https://res.cloudinary.com/dvf7rhe2l/image/upload/v1767496003/Screenshot_2026-01-04_083547_iexkau.png",
+  },
+  {
+    id: 6,
+    title: "Job Scheduler",
+    category: "Full Stack",
+    liveUrl: "https://jobs-scheduler.vercel.app/",
+    github: "https://github.com/Sanjay-Kumar-Git/job-scheduler.git",
+    tech: ["ReactJs","Axios","NodeJs","Sqlite","Vite","Render","Vercel","HTML5", "CSS3", "JAVASCRIPT"],
+    description:
+      "This Full Stack Project is Built in The process of a Company Assessment",
+      thumbnail:
+      "https://res.cloudinary.com/dvf7rhe2l/image/upload/v1767852337/Screenshot_2026-01-08_113328_cpcgd7.png",
   },
 ];
 
@@ -229,6 +241,7 @@ const ProjectsSection = () => {
             <FooterIcon
               $dark={dark}
               href="https://www.instagram.com/mr.sanju.xt/?hl=en"
+              target="_blank"
             >
               <LuInstagram size={30} />
             </FooterIcon>
@@ -404,8 +417,6 @@ const styles = {
   card: (dark) => ({
     padding: "12px",
     borderRadius: "16px",
-    minHeight: "50%",
-    minWidth: "50%",
     marginRight:'10px',
     textAlign: "center",
     cursor: "pointer",
@@ -417,7 +428,7 @@ const styles = {
     width: "100%",
     borderRadius: "12px",
     marginBottom: "40px",
-    minHeight: "200px",
+
   },
 
   viewer: {

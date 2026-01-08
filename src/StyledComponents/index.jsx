@@ -1394,7 +1394,7 @@ export const Description = styled.p`
 
 export const AboutPage=styled.div`
     background: ${({ $dark }) => ($dark ? '#000000' : '#f9faf9')};
-    width: 100vw;
+    width: 100vw ;
 `
 
 export const PageWrapper = styled.section`
@@ -1418,7 +1418,7 @@ export const Grid = styled.div`
   margin: auto;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 40px;
+  gap: 20px;
 `
 
 export const Card = styled(motion.div)`
@@ -1676,7 +1676,6 @@ export const CardImage = styled.img`
   border-radius: 50%;
   margin-bottom: 0px;
   padding-bottom:0px;
-
   @media (max-width: 480px) {
     width: 200px;
   }

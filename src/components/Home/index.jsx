@@ -357,6 +357,7 @@ const Home = () => {
               <FooterIcon
                 $dark={dark}
                 href="https://www.instagram.com/mr.sanju.xt/?hl=en"
+                target="_blank"
               >
                 <LuInstagram size={30} />
               </FooterIcon>

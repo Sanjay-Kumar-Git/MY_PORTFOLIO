@@ -83,7 +83,6 @@ const Notfound = () => {
             >
               <LuInstagram size={30} />
             </FooterIcon>
-
             <FooterIcon
               $dark={dark}
               href="mailto:sanjaythadaka614@gmail.com"
