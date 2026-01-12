@@ -98,6 +98,17 @@ const projects = [
       "This Full Stack Project is Built in The process of a Company Assessment",
       thumbnail:
       "https://res.cloudinary.com/dvf7rhe2l/image/upload/v1767852337/Screenshot_2026-01-08_113328_cpcgd7.png",
+  },{
+    id: 7,
+    title: "Store | Rating",
+    category: "Full Stack",
+    liveUrl: "https://stores-ratings.vercel.app/login",
+    github: "https://github.com/Sanjay-Kumar-Git/store-rating.git",
+    tech: ["ReactJs","react-router","expressJs","tailwindCss","NodeJs","Sqlite","Vite","Render","Vercel","HTML5", "CSS3", "JAVASCRIPT"],
+    description:
+      "This Full Stack Project is Built in The process of a Company Assessment",
+      thumbnail:
+      "https://res.cloudinary.com/dvf7rhe2l/image/upload/v1768225724/Screenshot_2026-01-12_191606_yqgus1.png",
   },
 ];
 
