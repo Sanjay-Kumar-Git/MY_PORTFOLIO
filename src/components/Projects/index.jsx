@@ -106,7 +106,7 @@ const projects = [
     github: "https://github.com/Sanjay-Kumar-Git/store-rating.git",
     tech: ["ReactJs","react-router","expressJs","tailwindCss","NodeJs","Sqlite","Vite","Render","Vercel","HTML5", "CSS3", "JAVASCRIPT"],
     description:
-      "This Full Stack Project is Built in The process of a Company Assessment",
+      "This Full Stack Project is Built in The process of a Company Assessment  Credentials: admin@store.com, Admin@123",
       thumbnail:
       "https://res.cloudinary.com/dvf7rhe2l/image/upload/v1768225724/Screenshot_2026-01-12_191606_yqgus1.png",
   },
